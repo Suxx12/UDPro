@@ -17,7 +17,7 @@ import { DashboardEstudiante } from "./Paginas/Dashboard-estudiante.jsx";
 import PruebaNavbar from "./PruebaNavbar.jsx";
 import { Callback } from "./callback.jsx";
 import { MisProyectosEstudiante } from "./Paginas/MisProyectosEstudiante";
-
+import RankingProyectos from "./Paginas/RankingProyectos";
 // Layout con Navbar
 function LayoutWithNavbar() {
   return (
@@ -29,7 +29,7 @@ function LayoutWithNavbar() {
         <Route path="/dashboard-profe" element={<DashboardProfe />} />
         <Route path="/mis-proyectos" element={<MisProyectosEstudiante />} />
         <Route path="/dashboard-estudiante" element={<DashboardEstudiante />} />
-        {/* Aquí puedes agregar más rutas que SÍ deben tener navbar */}
+        {<Route path="/ranking" element={<RankingProyectos />} />}
       </Routes>
     </>
   );
